@@ -26,13 +26,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    qrcode.cpp
+    qrcode.cpp \
+    historystatistics.cpp
 
 HEADERS += \
         mainwindow.h \
     qrcode.h \
+    historystatistics.h
 
 FORMS += \
         mainwindow.ui
 
 LIBS += -lqrencode
+
+include(QZXing/QZXing.pri)
+include(statistics)
+
+RESOURCES += \
+    log.qrc

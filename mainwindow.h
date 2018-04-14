@@ -17,6 +17,8 @@
 #include<QDateTime>
 #include<QMutex>
 #include<QStatusBar>
+#include<QZXing>
+#include<historystatistics.h>
 
 class QRCode;
 namespace Ui {
@@ -51,6 +53,18 @@ private slots:
 
     void on_exportButton_clicked();
 
+    void on_openFileForDecodeAction_triggered();
+
+    void on_codeButton_clicked();
+
+    void on_showStatisticsAction_triggered();
+
+    void on_clearLogAction_triggered();
+
+signals:
+    void encodeSignal(int cnt);
+    void decodeSignal(int cnt);
+
 private:
     Ui::MainWindow *ui;
     QString path;
@@ -59,6 +73,7 @@ private:
     QRCode*qrCode;
     int SymbolNum[MAX_LEVEL];
     QMutex exportFileCntMutex;
+    HistoryStatistics*historyStatistics;
 };
 
 #endif // MAINWINDOW_H

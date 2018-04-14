@@ -6,132 +6,125 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>305</width>
-    <height>410</height>
+    <width>383</width>
+    <height>408</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <widget class="QPushButton" name="codeButton">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QLabel" name="codeLabel">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>:/test.png</pixmap>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="Line" name="line_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QTextEdit" name="textEdit">
-          <property name="html">
-           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+       <widget class="QTextEdit" name="textEdit">
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;可在此编辑文本内容&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-         </widget>
-        </item>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <layout class="QGridLayout" name="gridLayout_2">
-            <item row="0" column="0">
-             <widget class="QPushButton" name="selectFileButton">
-              <property name="text">
-               <string>选择文本文件</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QPushButton" name="saveFileButton">
-              <property name="text">
-               <string>保存文本文件</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="Line" name="line">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="selectFileButton">
+            <property name="text">
+             <string>选择文本文件</string>
             </property>
            </widget>
           </item>
-          <item>
-           <layout class="QGridLayout" name="gridLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="versionLabel">
-              <property name="text">
-               <string>版本:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QSpinBox" name="versionSpinBox"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="SymbolNumLabel">
-              <property name="text">
-               <string>码元数:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QLCDNumber" name="symbolNumLcdNumber"/>
-            </item>
-           </layout>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="saveFileButton">
+            <property name="text">
+             <string>保存文本文件</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
         <item>
-         <widget class="Line" name="line_3">
+         <widget class="Line" name="line">
           <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+           <enum>Qt::Vertical</enum>
           </property>
          </widget>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
-          <item>
-           <widget class="QPushButton" name="generateButton">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="versionLabel">
             <property name="text">
-             <string>生成</string>
+             <string>版本:</string>
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QPushButton" name="exportButton">
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="versionSpinBox"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="SymbolNumLabel">
             <property name="text">
-             <string>导出</string>
+             <string>码元数:</string>
             </property>
            </widget>
           </item>
-          <item>
-           <widget class="QPushButton" name="exportAsButton">
-            <property name="text">
-             <string>导出为</string>
-            </property>
-           </widget>
+          <item row="1" column="1">
+           <widget class="QLCDNumber" name="symbolNumLcdNumber"/>
           </item>
          </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="generateButton">
+          <property name="text">
+           <string>生成</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exportButton">
+          <property name="text">
+           <string>导出</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exportAsButton">
+          <property name="text">
+           <string>导出为</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -144,40 +137,24 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>305</width>
+     <width>383</width>
      <height>30</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="statisticsMenu">
     <property name="title">
      <string>统计信息</string>
     </property>
-    <widget class="QMenu" name="menu_2">
-     <property name="title">
-      <string>编码</string>
-     </property>
-     <addaction name="actionsuccess_rate"/>
-     <addaction name="actionbytes_count"/>
-     <addaction name="actionencode_times"/>
-    </widget>
-    <widget class="QMenu" name="menu_3">
-     <property name="title">
-      <string>解码</string>
-     </property>
-     <addaction name="actionsuccess_rate_2"/>
-     <addaction name="actionbytes_count_2"/>
-     <addaction name="actiondecode_times"/>
-    </widget>
-    <addaction name="menu_2"/>
-    <addaction name="menu_3"/>
+    <addaction name="showStatisticsAction"/>
+    <addaction name="clearLogAction"/>
    </widget>
    <widget class="QMenu" name="menu_4">
     <property name="title">
      <string>解码</string>
     </property>
-    <addaction name="action_3"/>
+    <addaction name="openFileForDecodeAction"/>
    </widget>
-   <addaction name="menu"/>
+   <addaction name="statisticsMenu"/>
    <addaction name="menu_4"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -189,39 +166,52 @@ p, li { white-space: pre-wrap; }
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionsuccess_rate">
+  <action name="encodeSuccessRateAction">
    <property name="text">
-    <string>success rate</string>
+    <string>&amp;success rate</string>
    </property>
   </action>
-  <action name="actionbytes_count">
+  <action name="encodeBytesCountAction">
    <property name="text">
-    <string>bytes count</string>
+    <string>&amp;bytes count</string>
    </property>
   </action>
-  <action name="actionencode_times">
+  <action name="encodeTimesAction">
    <property name="text">
-    <string>encode times</string>
+    <string>&amp;encode times</string>
    </property>
   </action>
-  <action name="actionsuccess_rate_2">
+  <action name="dncodeSuccessRateAction">
    <property name="text">
-    <string>success rate</string>
+    <string>&amp;success rate</string>
    </property>
   </action>
-  <action name="actionbytes_count_2">
+  <action name="encodeBytesCountAction_2">
    <property name="text">
-    <string>bytes count</string>
+    <string>&amp;bytes count</string>
    </property>
   </action>
-  <action name="actiondecode_times">
+  <action name="decodeTimesAction">
    <property name="text">
-    <string>decode times</string>
+    <string>&amp;decode times</string>
    </property>
   </action>
-  <action name="action_3">
+  <action name="openFileForDecodeAction">
    <property name="text">
-    <string>从文件中选取二维码</string>
+    <string>从文件中读取二维码</string>
+   </property>
+   <property name="toolTip">
+    <string>从文件中读取二维码</string>
+   </property>
+  </action>
+  <action name="showStatisticsAction">
+   <property name="text">
+    <string>结果统计</string>
+   </property>
+  </action>
+  <action name="clearLogAction">
+   <property name="text">
+    <string>清空历史</string>
    </property>
   </action>
  </widget>
