@@ -1,5 +1,5 @@
 # QR-Code
-Qt / C++ / Encode(<a href="https://github.com/fukuchi/libqrencode">libqrencode</a>) / Decode(<a href="https://github.com/ftylitak/qzxing">QZXing</a>)  (just a homework~)
+Qt / C++ / 编码(<a href="https://github.com/fukuchi/libqrencode">libqrencode</a>) / 解码(<a href="https://github.com/ftylitak/qzxing">QZXing</a>)
 
 
 

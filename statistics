@@ -1,6 +1,6 @@
- encodeTimes 100
- decodeTimes 20
- encodeSuccessTimes 100
- decodeSuccessTimes 19
- encodeBytesCount 10000
- decodeBytesCount 1100
+encodeTimes 123
+decodeTimes 20
+encodeSuccessTimes 100
+decodeSuccessTimes 19
+encodeBytesCount 10000
+decodeBytesCount 1100
