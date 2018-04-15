@@ -115,14 +115,14 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QPushButton" name="exportButton">
           <property name="text">
-           <string>导出</string>
+           <string>导出QR Code</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="exportAsButton">
           <property name="text">
-           <string>导出为</string>
+           <string>导出QR Code为</string>
           </property>
          </widget>
         </item>
@@ -216,6 +216,15 @@ p, li { white-space: pre-wrap; }
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>textEdit</tabstop>
+  <tabstop>generateButton</tabstop>
+  <tabstop>selectFileButton</tabstop>
+  <tabstop>saveFileButton</tabstop>
+  <tabstop>exportAsButton</tabstop>
+  <tabstop>exportButton</tabstop>
+  <tabstop>versionSpinBox</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

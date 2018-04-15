@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>statistics</file>
+        <file>statistics.log</file>
     </qresource>
 </RCC>

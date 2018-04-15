@@ -40,7 +40,5 @@ FORMS += \
 LIBS += -lqrencode
 
 include(QZXing/QZXing.pri)
-include(statistics)
-
-RESOURCES += \
-    log.qrc
+include(statistics.log)
+RESOURCES +=

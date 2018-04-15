@@ -2,13 +2,16 @@
 
 HistoryStatistics::HistoryStatistics(QObject *parent) : QObject(parent)
 {
-    QFile file(":/statistics");
+    QFile file("statistics.log");
     if(file.open(QFile::ReadOnly | QFile::Text)){
         QTextStream in(&file);
         while(!in.atEnd()){
             QString key;
             int value;
             in>>key>>value;
+            if(key.isEmpty()){
+                continue;
+            }
             record[key]=value;
             qDebug()<<key<<": "<<value<<endl;
         }
@@ -21,13 +24,14 @@ HistoryStatistics::HistoryStatistics(QObject *parent) : QObject(parent)
 
 HistoryStatistics::~HistoryStatistics(){
     qDebug()<<tr("destory HistoryStatistics")<<endl;
-    QFile file("statistics");
-    if(file.open(QIODevice::ReadWrite|QIODevice::Text)){
+    QFile file("statistics.log");
+    if(file.open(QFile::WriteOnly | QFile::Text)){
         QTextStream out(&file);
         for(QMap<QString,int>::const_iterator it = record.cbegin(); it != record.cend(); ++it){
-            out<<it.key()<<": "<<it.value()<<endl;
+            out<<it.key()<<" "<<it.value()<<endl;
             qDebug()<<it.key()<<": "<<it.value()<<endl;
         }
+        out.flush();
         file.close();
     }
     else{
